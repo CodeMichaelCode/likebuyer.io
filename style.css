@@ -1,0 +1,261 @@
+:root{
+    --main-blue-color: #68D4D9;
+    --main-pink-color: #FE9F99;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color:#fff;
+}
+
+.menu-container{
+    background-color: white;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.menu ul{
+    display: inline-flex;
+    margin: 25px;
+    color: #666666;
+    width: 75%;
+}
+
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 48px;
+    margin-left: 5vw;
+}
+
+.home {
+    color: var(--main-blue-color);
+}
+
+.service-btn{
+    text-decoration: none;
+    color: #666666;
+    border: 2px solid var(--main-blue-color);
+    border-radius: 20px;
+    margin-right: 5vw;
+    text-align: center;
+    padding: 10px 50px;
+    white-space: nowrap;
+}
+
+.service-btn:hover{
+    color: #fff;
+    background-color: var(--main-blue-color);
+}
+
+.banner{
+    width: 90%;
+    min-height: 80vh;
+    color: #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.app-text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    z-index: 2;
+}
+
+.app-text h1{
+    font-size: clamp(32px, 1vw + 2rem, 4rem);
+    width: 90%;
+    position: relative;
+    margin-left: 40px;
+    transition: all 500ms ease;
+}
+
+.app-text p{
+    width: 100%;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #666666;
+}
+
+.app-text span{
+    color: #68D4D9;
+}
+
+.app-picture{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+}
+
+.app-picture img{
+    width: 65%;
+    min-width: 300px;
+}
+
+.play-btn{
+    margin-left: 40px;
+    display: inline-flex;
+}
+
+.play-btn-inner{
+  height: 50px;
+  width: 50px;
+  border: 2px solid var(--main-blue-color);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.play-btn-inner .fa{
+    padding: 18px 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+small{
+    margin: auto 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #68D4D9;
+    letter-spacing: 3px;
+}
+
+.social-icons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-boxes{
+    border: 2px solid #fff;
+    width: 34%;
+    padding: 2vh;
+    font-size: 48px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--main-blue-color);
+    transition: all 300ms ease;
+}
+
+.social-boxes:first-of-type{
+    margin: 0 0 0 5vw;
+}
+
+.social-boxes:last-of-type{
+    margin: 0 5vw 0 0;
+}
+
+.social-boxes:hover{
+    background-color: var(--main-pink-color);
+    transition: all 300ms ease;
+}
+
+#mobile{
+    display: none;
+    margin-right: 5vw;
+    font-size:32px;
+    width: 100%;
+}
+
+#mobile i,
+#mobile img{
+    cursor: pointer;
+}
+
+.mobile{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-color: #666666;
+    padding: 3vh 0;
+}
+
+.mobile ul{
+    list-style: none;
+}
+
+.mobile li{
+    padding: 3vh 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mobile li:hover{
+    color: #FE9F99;
+}
+
+.mobileSwitch{
+    display: flex;
+}
+
+.menuContG{
+    background-color: #666666;
+}
+
+@media only screen and (max-width: 950px){
+    .banner{
+        flex-direction: column;
+        margin: 2vh auto;
+        justify-content: center;
+    }
+    .app-text,.app-picture{
+        width: 80%;
+    }
+    .menu{
+        display: none;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .app-text h1{
+        margin: 0;
+    }
+    .app-text p{
+        margin: 30px 0 30px 0;
+    }
+    .play-btn{
+        margin-left: 0px;
+    }
+    .app-picture{
+        margin-left: 0;
+    }
+    .service-btn{
+        margin: 0;
+    }
+    .mobile li,
+    .mobile ul{
+        width: 100%;
+    }
+}
