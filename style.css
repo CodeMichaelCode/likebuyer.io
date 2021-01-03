@@ -42,13 +42,22 @@
     cursor: pointer;
 }
 
+.menu ul li:hover{
+    color: black;
+}
+
 .logo {
     width: 48px;
     margin-left: 5vw;
+    cursor: pointer;
 }
 
 .home {
     color: var(--main-blue-color);
+}
+
+.home:hover {
+    color: #00d0db !important; 
 }
 
 .service-btn{
