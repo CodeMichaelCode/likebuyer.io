@@ -123,9 +123,9 @@
 }
 
 .app-picture img{
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
-    min-width: 250px;
+    /* min-width: 250px; */
 }
 
 .play-btn{
@@ -237,7 +237,8 @@ small{
         margin: 2vh auto;
         justify-content: center;
     }
-    .app-text,.app-picture{
+    .app-text,
+    .app-picture{
         width: 80%;
     }
     .menu{
