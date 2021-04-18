@@ -123,9 +123,9 @@
 }
 
 .app-picture img{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    /* min-width: 250px; */
+    min-width: 200px;
 }
 
 .play-btn{
@@ -261,6 +261,10 @@ small{
     }
     .app-picture{
         margin-left: 0;
+    }
+    .app-picture img {
+        padding: 20px 0;
+        width: 90% !important;
     }
     .service-btn{
         margin: 0;
