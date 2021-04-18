@@ -124,7 +124,8 @@
 
 .app-picture img{
     width: 65%;
-    min-width: 300px;
+    margin: 0 auto;
+    min-width: 250px;
 }
 
 .play-btn{
