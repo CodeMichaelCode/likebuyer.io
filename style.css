@@ -264,7 +264,8 @@ small{
     }
     .app-picture img {
         padding: 20px 0;
-        width: 90% !important;
+        width: 100% !important;
+        
     }
     .service-btn{
         margin: 0;
@@ -272,5 +273,11 @@ small{
     .mobile li,
     .mobile ul{
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .app-picture img {
+        max-height: 220px;
     }
 }
